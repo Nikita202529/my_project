@@ -1,0 +1,32 @@
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #aaa;
+}
+
+.bg-dark {
+    background-color: #000!important;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgb(255 255 255 / 100%);
+    border-color: rgb(255 255 255)
+}
+
+.btn-outline-danger {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-danger:hover {
+    color: #fff;
+    background-color: #aaa;
+    border-color: #fff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+    color: #fff;
+}
