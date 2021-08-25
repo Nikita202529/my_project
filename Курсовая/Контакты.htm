@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="First.css">
+	<title>Контакты</title>
+</head>
+<body>
+	<header>
+	<div class="Logo"><h1>Контроль температуры и управление отоплением в умном доме</h1>
+	</div>
+	<div class="topnav">
+         <a class="active" href="Termo House.htm">Главная</a>
+         <a href="Личный кабинет.php">Личный кабинет</a>
+         <a href="#">Контакты</a>
+        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="Sign_Up">Регистрация
+       </button>
+         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="Sign_Up">Авторизация
+       </button>
+    </div>
+  
+  <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+
+  <form class="modal-content" action="auto.php" method="post">
+    <div class="container">
+      <h1>Авторизация</h1>
+      <p>Пожалуйста заполните эти поля для входа в аккаунт.</p>
+      <hr>
+      <label for="username"><b>Введите имя пользователя</b></label>
+      <input type="text" placeholder="Введите имя пользователя" name="username" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder="Введите пароль" name="psw" required>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Выход</button>
+        <button type="submit" class="signupbtn">Авторизация</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+let modal = document.getElementById('id01');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+
+  <form class="modal-content" action="chek.php" method="post">
+    <div class="container">
+      <h1>Регистрация</h1>
+      <p>Пожалуйста заполните эти поля для регистрации.</p>
+      <hr>
+      <label for="username"><b>Введите имя пользователя</b></label>
+      <input type="text" placeholder="Введите имя пользователя" name="username" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder="Введите пароль" name="psw" required>
+
+      <label for="email"><b>Адрес электронной почты</b></label>
+      <input type="email" placeholder="Введите адрес электронной почты" name="email" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+      </label>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Выход</button>
+        <button type="submit" class="signupbtn">Регистрация</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+let modal = document.getElementById('id02');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	</header>
+	<main>
+		<div class="About"><h2>Наши контакты</h2>
+      <hr>
+		<div class="VK">
+		<p>Для связи с нашей организацией вы можете:</p>
+         <ul> 
+          <li>Позвонить по телефону:
+            <ul>
+              <li>Москва: 8-988-456-75-93</li>
+              <li>Ростов на Дону: 8-988-546-68-97</li>
+              <li>Новочеркасск: 8-988-476-75-37</li>
+            </ul>
+          </li>
+          <li><p>Написать нам на почту: TermoHouse@mail.ru</p></li>
+          <li>Посетить нас по адресу:
+            <ul>
+              <li>Москва: ул. Красная 17</li>
+              <li>Ростов на Дону: ул. Алмазная 10</li>
+              <li>Новочеркасск: ул. Московская 9</li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+    </div>
+	</main>
+	<footer>
+		<div class="topnav1">
+         <a class="active1" href="Termo House.htm">Главная</a>
+         <a href="Личный кабинет.php">Личный кабинет</a>
+         <a href="#">Контакты</a>
+          <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="Sign_Up">Регистрация
+       </button>
+         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="Sign_Up">Авторизация
+	     </button>
+    </div>
+	</footer>
+</body>
+</html>

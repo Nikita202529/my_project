@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="First.css">
+	<title>Termo House</title>
+</head>
+<body>
+	<header>
+	<div class="Logo"><h1>Контроль температуры и управление отоплением в умном доме</h1>
+	</div>
+	<div class="topnav">
+         <a class="active" href="#">Главная</a>
+         <a href="Личный кабинет.php">Личный кабинет</a>
+         <a href="Контакты.htm">Контакты</a>
+         <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="Sign_Up">Регистрация
+       </button>
+         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="Sign_Up">Авторизация
+	     </button>
+    </div>
+	
+	<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+
+  <form class="modal-content" action="auto.php" method="post">
+    <div class="container">
+      <h1>Авторизация</h1>
+      <p>Пожалуйста заполните эти поля для входа в аккаунт.</p>
+      <hr>
+      <label for="username"><b>Введите имя пользователя</b></label>
+      <input type="text" placeholder="Введите имя пользователя" name="username" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder="Введите пароль" name="psw" required>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Выход</button>
+        <button type="submit" class="signupbtn">Авторизация</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+let modal = document.getElementById('id01');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+
+  <form class="modal-content" action="chek.php" method="post">
+    <div class="container">
+      <h1>Регистрация</h1>
+      <p>Пожалуйста заполните эти поля для регистрации.</p>
+      <hr>
+      <label for="username"><b>Введите имя пользователя</b></label>
+      <input type="text" placeholder="Введите имя пользователя" name="username" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder="Введите пароль" name="psw" required>
+
+      <label for="email"><b>Адрес электронной почты</b></label>
+      <input type="email" placeholder="Введите адрес электронной почты" name="email" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+      </label>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Выход</button>
+        <button type="submit" class="signupbtn">Регистрация</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+let modal = document.getElementById('id02');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	</header>
+	<main>
+		<div class="About"><h2>Контроль температуры</h2>
+			<hr>
+		<div class="img"><img src="https://cdn.iz.ru/sites/default/files/styles/1920x1080/public/article-2020-06/Depositphotos_189467548_xl-2015_1_0.jpg?itok=8LdwmQeF"></div>
+		<div class="Text">
+		<p>Кондиционеры, теплые полы и регулируемые обогреватели в настоящее время присутствуют в домах и квартирах около 40% населения России. Все эти приборы в целом справляются с задачей по созданию комфорта и максимального уюта для домочадцев. Однако в большинстве случаев отопительное оборудование работает практически бесконтрольно и зачастую в холостую. Для того, чтобы преодолеть разнобой и по возможности скоординировать работу отопительного и вентиляционного оборудования и избежать напрасного расхода энергии, необходима эффективная единая система контроля и управление. Можно опробовать самостоятельный контроль над всей установленной техникой, однако, практика показывает, что такой метод требует больших временных затрат и постоянного участия со стороны домовладельца. Поэтому, наиболее рациональным вариантом является установка системы климатического контроля в качестве структурного компонента системы «умный дом».</p>
+		<p>Система «умный дом» способна самостоятельно справляться с созданием, поддержанием и управлением индивидуальным микроклиматом для каждой отдельной зоны жилища. Согласованная работа всех комплектующих климатической системы позволит поддерживать необходимую температуру отдельно для санузла, спальни и гостиной. В отсутствие хозяев дома, умная система климат-контроля «засыпает» до прихода пользователей.</p>
+
+        <p>Система климатического контроля с помощью смарт-технологии может работать в режиме многозадачности. Настройка всех терморегуляторов на радиаторах, включение и выключение кондиционера, регулирование температуры происходит с помощью всего одного приложения или программной оболочки генерального модуля управления.</p>
+        </div>
+      </div>
+	</main>
+	<footer>
+		<div class="topnav1">
+         <a class="active1" href="#">Главная</a>
+         <a href="Личный кабинет.php">Личный кабинет</a>
+         <a href="Контакты.htm">Контакты</a>
+         <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="Sign_Up">Регистрация
+       </button>
+         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="Sign_Up">Авторизация
+	     </button>
+    </div>
+	</footer>
+</body>
+</html>
+
